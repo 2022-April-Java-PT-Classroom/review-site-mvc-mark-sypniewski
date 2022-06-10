@@ -20,7 +20,7 @@ public class Review {
 
     public String getContent() {return content;}
 
-    public Review(long in, String title, String imageUrl, String category, String content) {
+    public Review(long id, String title, String imageUrl, String category, String content) {
         this.id = id;
         this.title = title;
         this.imageUrl = imageUrl;

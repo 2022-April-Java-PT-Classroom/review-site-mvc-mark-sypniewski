@@ -11,11 +11,18 @@ public class ReviewRepository {
 
     Map<Long, Review> reviewsList = new HashMap<>();
 
+    public ReviewRepository() {
+        Review staticPrevails = new Review(1996,"Static Prevails","image","Full Length","Static Prevails Content");
+
+        reviewsList.put(staticPrevails.getId(), staticPrevails);
+        }
+
     public ReviewRepository(Review... reviewsToAdd) {
         for (Review review : reviewsToAdd) {
             reviewsList.put(review.getId(), review);
         }
     }
+
 
     public Review findOne(long id) {return reviewsList.get(id); }
 
