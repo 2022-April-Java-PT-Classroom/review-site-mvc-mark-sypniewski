@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="${reviewModel.title}">Jimmy Eat World Album Review</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 <header>
-    <h1 th:text="${reviewModel.title}">A Review</h1>
+    <img th:src="${reviewModel.imageUrl}"></img>
+    <h1 th:text="${reviewModel.title}"></h1>
 </header>
 
 <main>

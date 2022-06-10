@@ -12,26 +12,26 @@ public class ReviewRepository {
     Map<Long, Review> reviewsList = new HashMap<>();
 
     public ReviewRepository() {
-        Review jimmyEatWorld = new Review(1994, "Jimmy Eat World", "image", "Full Length",
+        Review jimmyEatWorld = new Review(1994, "Jimmy Eat World", "../images/Jimmy_Eat_World.jpeg", "Full Length",
                 "Jimmy Eat World Content");
-        Review staticPrevails = new Review(1996, "Static Prevails", "image", "Full Length",
+        Review staticPrevails = new Review(1996, "Static Prevails", "../images/Static_Prevails.jpeg", "Full Length",
                 "Static Prevails Content");
-        Review clarity = new Review(1999, "Clarity", "image", "Full Length",
+        Review clarity = new Review(1999, "Clarity", "../images/Clarity.jpeg", "Full Length",
                 "Clarity Content");
-        Review bleedAmerican = new Review(2001, "Bleed American", "image", "Full Length",
+        Review bleedAmerican = new Review(2001, "Bleed American", "../images/Bleed_American.jpeg", "Full Length",
                 "Bleed American Content");
-        Review futures = new Review(2004, "Futures", "image", "Full Length",
+        Review futures = new Review(2004, "Futures", "../images/Futures.jpeg", "Full Length",
                 "Futures Content");
 
-        Review chaseThisLight = new Review(2007, "Chase This light", "image", "Full Length",
+        Review chaseThisLight = new Review(2007, "Chase This light", "../images/Chase_This_Light.jpeg", "Full Length",
                 "Chase This Light Content");
-        Review invented = new Review(2010, "Invented", "image", "Full Length",
+        Review invented = new Review(2010, "Invented", "../images/Invented.jpeg", "Full Length",
                 "Invented Content");
-        Review damage = new Review(2013, "Damage", "image", "Full Length",
+        Review damage = new Review(2013, "Damage", "../images/Damage.jpeg", "Full Length",
                 "Damage Content");
-        Review integrityBlues = new Review(2016, "Integrity Blues", "image", "Full Length",
+        Review integrityBlues = new Review(2016, "Integrity Blues", "../images/Integrity_Blues.jpeg", "Full Length",
                 "Integrity Blues Content");
-        Review surviving = new Review(1996, "Surviving", "image", "Full Length",
+        Review surviving = new Review(1996, "Surviving", "../images/Surviving.png", "Full Length",
                 "Surviving Content");
 
         reviewsList.put(jimmyEatWorld.getId(), jimmyEatWorld);
