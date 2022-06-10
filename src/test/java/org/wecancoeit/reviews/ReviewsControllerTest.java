@@ -47,5 +47,20 @@ public class ReviewsControllerTest {
                 .andExpect(model().attribute("reviewsModel", allReviewsInModel));
     }
 
+    @Test
+    public void shouldBeOkForOneReviewInTheReviewTemplate() throws Exception {
+        Long reviewOneId = 1L;
+        when(reviewRepo.findOne(reviewOneId)).thenReturn(reviewOne);
+        mockMvc.perform(get("/review?id=1")).andExpect(status().isOk())
+                .andExpect(view().name("reviewTemplate"));
+    }
+
+    @Test
+    public void shouldFindReviewOneInModel() throws Exception {
+        Long reviewOneId = 1L;
+        when(reviewRepo.findOne(reviewOneId)).thenReturn(reviewOne);
+        mockMvc.perform(get("/review?id=1"))
+                .andExpect(model().attribute("reviewModel", reviewOne));
+    }
 
 }
