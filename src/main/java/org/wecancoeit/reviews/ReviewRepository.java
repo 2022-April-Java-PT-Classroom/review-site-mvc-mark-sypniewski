@@ -12,6 +12,8 @@ public class ReviewRepository {
     Map<Long, Review> reviewsList = new HashMap<>();
 
     public ReviewRepository() {
+        Review jimmyEatWorld = new Review(1994, "Jimmy Eat World", "image", "Full Length",
+                "Jimmy Eat World Content");
         Review staticPrevails = new Review(1996, "Static Prevails", "image", "Full Length",
                 "Static Prevails Content");
         Review clarity = new Review(1999, "Clarity", "image", "Full Length",
@@ -20,6 +22,7 @@ public class ReviewRepository {
                 "Bleed American Content");
         Review futures = new Review(2004, "Futures", "image", "Full Length",
                 "Futures Content");
+
         Review chaseThisLight = new Review(2007, "Chase This light", "image", "Full Length",
                 "Chase This Light Content");
         Review invented = new Review(2010, "Invented", "image", "Full Length",
@@ -31,6 +34,7 @@ public class ReviewRepository {
         Review surviving = new Review(1996, "Surviving", "image", "Full Length",
                 "Surviving Content");
 
+        reviewsList.put(jimmyEatWorld.getId(), jimmyEatWorld);
         reviewsList.put(staticPrevails.getId(), staticPrevails);
         reviewsList.put(clarity.getId(), clarity);
         reviewsList.put(bleedAmerican.getId(), bleedAmerican);

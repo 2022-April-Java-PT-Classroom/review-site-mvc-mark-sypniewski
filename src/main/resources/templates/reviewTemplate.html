@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title th:text="${reviewModel.title}">A Review</title>
+    <title th:text="${reviewModel.title}">Jimmy Eat World Album Review</title>
 </head>
 <body>
 <header>
@@ -11,10 +11,10 @@
 
 <main>
     <ul>
-        <p><a href="/reviews">Reviews</a></p>
-        <li th:text="${reviewModel.title}"></li>
+        <p><a href="/reviews">Discography</a></p>
+        <li th:text="${reviewModel.id}"></li>
     </ul>
-    <h2 th:text="${reviewModel.title}"></h2>
+    <h2 th:text="${reviewModel.content}"></h2>
 </main>
 
 <footer>
