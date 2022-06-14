@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${reviewModel.title}">Jimmy Eat World Album Review</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<header>
+    <img th:src="${reviewModel.imageUrl}"></img>
+    <h1 th:text="${reviewModel.title}"></h1>
+</header>
+
+<main>
+    <ul>
+        <p><a href="/reviews">Discography</a></p>
+        <li th:text="${reviewModel.id}"></li>
+    </ul>
+    <h2 th:text="${reviewModel.content}"></h2>
+</main>
+
+<footer>
+    <small>&copy Mark Sypniewski 2022</small>
+</footer>
+</body>
+</html>
